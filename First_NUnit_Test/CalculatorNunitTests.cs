@@ -32,11 +32,14 @@ namespace First_NUnit_Test
             //Assert.That(IsOddResult, IsEqualTo(true));
         }
         [Test]
-        public void IsOddNumber_ReturnFalse()
+        [TestCase(4)]
+        [TestCase(12)]
+        [TestCase(70)]
+        public void IsOddNumber_ReturnFalse(int a)
         {
             Calculator isNotOld = new Calculator();
 
-            bool IsNotOldResult = isNotOld.IsOddNumbers(4);
+            bool IsNotOldResult = isNotOld.IsOddNumbers(a);
 
             Assert.IsFalse(IsNotOldResult);
            //Assert.That(IsOddResult, IsEqualTo(false));
