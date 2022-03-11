@@ -21,6 +21,27 @@ namespace First_NUnit_Test
             //Assert
             Assert.AreEqual(30, result);
         }
+        [Test]
+        public void IsOddNumber_ReturnTrue()
+        {
+            Calculator isOdd = new ();
+
+            bool IsOddResult = isOdd.IsOddNumbers(3);
+
+            Assert.IsTrue(IsOddResult);
+            //Assert.That(IsOddResult, IsEqualTo(true));
+        }
+        [Test]
+        public void IsOddNumber_ReturnFalse()
+        {
+            Calculator isNotOld = new Calculator();
+
+            bool IsNotOldResult = isNotOld.IsOddNumbers(4);
+
+            Assert.IsFalse(IsNotOldResult);
+           //Assert.That(IsOddResult, IsEqualTo(false));
+
+        }
 
     }
 }

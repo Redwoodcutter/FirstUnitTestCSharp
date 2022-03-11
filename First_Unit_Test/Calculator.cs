@@ -8,6 +8,10 @@ namespace First_Unit_Test
         {
             return a + b;
         }
+        public bool IsOddNumbers(int a)
+        {
+            return a % 2 != 0;       
+        }
 
     }
 }
