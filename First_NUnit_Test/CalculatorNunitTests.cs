@@ -45,6 +45,15 @@ namespace First_NUnit_Test
            //Assert.That(IsOddResult, IsEqualTo(false));
 
         }
+        [Test]
+        [TestCase(10, ExpectedResult = false)]
+        [TestCase(11, ExpectedResult = true)]
+        public bool IsOddNumber_ReturnTrue_Checker(int a)
+        {
+            Calculator calc = new();
+
+            return calc.IsOddNumbers(a);
+        }
 
     }
 }
