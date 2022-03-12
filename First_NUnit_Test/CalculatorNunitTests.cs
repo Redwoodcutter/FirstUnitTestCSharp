@@ -54,6 +54,19 @@ namespace First_NUnit_Test
 
             return calc.IsOddNumbers(a);
         }
+        [Test]
+        [TestCase(5.4, 1.6)]
+        [TestCase(2.3,6.40)] 
+        [TestCase(3.54, 1.60)] 
+        public void AddNumbers_InputTwoDouble(double a, double b)
+        {
+            //Arrange
+            Calculator calc = new();
+            //Act
+            double result = calc.AddNumbersDouble(a,b);
+            //Assert
+            Assert.AreEqual(7.0, result,2);
+        }
 
     }
 }
