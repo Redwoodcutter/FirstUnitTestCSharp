@@ -44,5 +44,12 @@ namespace First_NUnit_Test
             //assert
             Assert.IsNull(customer.GreetingMessage);
         }
+
+        [Test]
+        public void DiscountDiscountRange()
+        {
+            int result = customer.Discount;
+            Assert.That(result, Is.InRange(10, 25));
+        }
     }
 }
