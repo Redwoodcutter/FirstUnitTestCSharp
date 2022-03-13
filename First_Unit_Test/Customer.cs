@@ -6,9 +6,11 @@ namespace First_Unit_Test
 {
     public class Customer
     {
+        public string GreetingMessage { get; set; }
         public string GreatingWithNames ( string firstName, string lastName)
         {
-            return $"Hello, {firstName} {lastName}";
+            GreetingMessage = $"Hello, {firstName} {lastName}";
+            return GreetingMessage;
         }
     }
 }

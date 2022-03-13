@@ -17,15 +17,25 @@ namespace First_NUnit_Test
             //Arrange
             var customer = new Customer();
             //Act
-            string fullName = customer.GreatingWithNames("Oguz", "Kumcular");
+            customer.GreatingWithNames("Oguz", "Kumcular");
             //Assert
-            Assert.AreEqual(fullName, "Hello, Oguz Kumcular");
-            Assert.That(fullName, Is.EqualTo("Hello, Oguz Kumcular"));
-            Assert.That(fullName, Does.Contain("oguz Kumcular").IgnoreCase);
-            Assert.That(fullName, Does.StartWith("Hello,"));
-            Assert.That(fullName, Does.EndWith("Kumcular"));
-            Assert.That(fullName, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]"));
+            Assert.AreEqual(customer.GreetingMessage, "Hello, Oguz Kumcular");
+            Assert.That(customer.GreetingMessage, Is.EqualTo("Hello, Oguz Kumcular"));
+            Assert.That(customer.GreetingMessage, Does.Contain("oguz Kumcular").IgnoreCase);
+            Assert.That(customer.GreetingMessage, Does.StartWith("Hello,"));
+            Assert.That(customer.GreetingMessage, Does.EndWith("Kumcular"));
+            Assert.That(customer.GreetingMessage, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]"));
 
+        }
+        [Test]
+        public void GreetingMessageReturnsNull()
+        {
+            //arrange
+            var customer = new Customer();
+            //act
+          
+            //assert
+            Assert.IsNull(customer.GreetingMessage);
         }
     }
 }
