@@ -10,6 +10,10 @@ namespace First_Unit_Test
         public string GreetingMessage { get; set; }
         public string GreatingWithNames ( string firstName, string lastName)
         {
+            if (string.IsNullOrWhiteSpace(firstName))
+            {
+                throw new ArgumentException("Empty First Name");
+            }
             GreetingMessage = $"Hello, {firstName} {lastName}";
             Discount = 20;
             return GreetingMessage;

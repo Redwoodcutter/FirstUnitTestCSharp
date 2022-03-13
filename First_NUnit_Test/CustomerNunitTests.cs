@@ -25,13 +25,16 @@ namespace First_NUnit_Test
             
             //Act
             customer.GreatingWithNames("Oguz", "Kumcular");
-            //Assert
-            Assert.AreEqual(customer.GreetingMessage, "Hello, Oguz Kumcular");
-            Assert.That(customer.GreetingMessage, Is.EqualTo("Hello, Oguz Kumcular"));
-            Assert.That(customer.GreetingMessage, Does.Contain("oguz Kumcular").IgnoreCase);
-            Assert.That(customer.GreetingMessage, Does.StartWith("Hello,"));
-            Assert.That(customer.GreetingMessage, Does.EndWith("Kumcular"));
-            Assert.That(customer.GreetingMessage, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]"));
+            Assert.Multiple(() =>
+            {
+                // Mulltiple Assert
+                Assert.AreEqual(customer.GreetingMessage, "Hello, Oguz Kumcular");
+                Assert.That(customer.GreetingMessage, Is.EqualTo("Hello, Oguz Kumcular"));
+                Assert.That(customer.GreetingMessage, Does.Contain("oguz Kumcular").IgnoreCase);
+                Assert.That(customer.GreetingMessage, Does.StartWith("Hello,"));
+                Assert.That(customer.GreetingMessage, Does.EndWith("Kumcular"));
+                Assert.That(customer.GreetingMessage, Does.Match("Hello, [A-Z]{1}[a-z]+ [A-Z]{1}[a-z]"));
+            });
 
         }
         [Test]
@@ -50,6 +53,22 @@ namespace First_NUnit_Test
         {
             int result = customer.Discount;
             Assert.That(result, Is.InRange(10, 25));
+        }
+        [Test]
+        public void GreatingMessageWithoutLastName()
+        {
+            customer.GreatingWithNames("Oguz", "");
+
+            Assert.IsNotNull(customer.GreetingMessage);
+
+            Assert.IsFalse(string.IsNullOrEmpty(customer.GreetingMessage));
+        }
+        [Test]
+        public void GreatCheckerException()
+        {
+            var exceptionDetails = Assert.Throws<ArgumentException>(() => customer.GreatingWithNames("", "Kumcular"));
+            Assert.AreEqual("Empty First Name", exceptionDetails.Message);
+            Assert.That(() => customer.GreatingWithNames("", "Kumcular"), Throws.ArgumentException.With.Message.EqualTo("Empty First Name"));
         }
     }
 }
