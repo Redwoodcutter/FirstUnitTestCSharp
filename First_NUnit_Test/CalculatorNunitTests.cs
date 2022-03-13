@@ -11,11 +11,17 @@ namespace First_NUnit_Test
     [TestFixture]
     public class CalculatorNunitTests
     {
+        private Calculator calc;
+        [SetUp]
+        public void Setup()
+        {
+            calc = new Calculator();
+        }
         [Test]
         public void AddNumbers_InputTwoInt_GetCorrectAddition()
         {
             //Arrange
-            Calculator calc = new Calculator();
+         
             //Act
             int result = calc.AddNumbers(10, 20);
             //Assert
@@ -50,7 +56,7 @@ namespace First_NUnit_Test
         [TestCase(11, ExpectedResult = true)]
         public bool IsOddNumber_ReturnTrue_Checker(int a)
         {
-            Calculator calc = new();
+          
 
             return calc.IsOddNumbers(a);
         }
@@ -61,11 +67,20 @@ namespace First_NUnit_Test
         public void AddNumbers_InputTwoDouble(double a, double b)
         {
             //Arrange
-            Calculator calc = new();
+          
             //Act
             double result = calc.AddNumbersDouble(a,b);
             //Assert
             Assert.AreEqual(7.0, result,2);
+        }
+        [Test]
+        public void OddRanger_MinMaxRangeOddNumber()
+        {
+            List<int> expectedOddRange = new() { 5, 7, 9 }; //5-10
+            //ACT
+            List<int> result = calc.getOddRange(5,10);
+            //
+            Assert.That(result, Is.EquivalentTo(expectedOddRange));
         }
 
     }
