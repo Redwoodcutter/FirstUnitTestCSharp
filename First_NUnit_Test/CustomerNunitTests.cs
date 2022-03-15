@@ -70,5 +70,20 @@ namespace First_NUnit_Test
             Assert.AreEqual("Empty First Name", exceptionDetails.Message);
             Assert.That(() => customer.GreatingWithNames("", "Kumcular"), Throws.ArgumentException.With.Message.EqualTo("Empty First Name"));
         }
+        [Test]
+        public void CustomerType_CreateCustomer_BasicCustomer()
+        {
+            customer.OrderTotal = 10;
+            var result = customer.GetCustomerDetails();
+            Assert.That(result,Is.TypeOf<BasicCustomer>());
+        } 
+        [Test]
+        public void CustomerType_CreateCustomer_PlatinumCustomer()
+        {
+            customer.OrderTotal = 140;
+            var result = customer.GetCustomerDetails();
+             Assert.That(result, Is.TypeOf<PlatinumCustomer>());
+            }
+        
     }
 }
