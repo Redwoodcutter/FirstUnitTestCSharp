@@ -23,7 +23,7 @@ namespace First_NUnit_Test
             Assert.That(result, Is.Ordered);
             Assert.That(result, Is.EquivalentTo(expectedRange));
         }
-
+        [Test]
         public void FiboCheckMoreInputSeries()
         {
             List<int> expectedRange = new() { 0,1,1,2,3,5 };
