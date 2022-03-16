@@ -16,7 +16,7 @@ namespace First_Unit_Test
         }
         public bool Depozit (int amount)
         {
-            _logBook.Message("Deposit invoked");
+            _logBook.Message("Deposit invoked"); 
             balance += amount;
             return true;
         }

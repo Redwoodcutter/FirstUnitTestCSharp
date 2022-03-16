@@ -99,3 +99,5 @@ C:\Users\Oguzk\source\repos\First_Unit_Test\First_NUnit_Test\obj\Debug\net6.0\re
 C:\Users\Oguzk\source\repos\First_Unit_Test\First_NUnit_Test\obj\Debug\net6.0\First_NUnit_Test.pdb
 C:\Users\Oguzk\source\repos\First_Unit_Test\First_NUnit_Test\obj\Debug\net6.0\First_NUnit_Test.genruntimeconfig.cache
 C:\Users\Oguzk\source\repos\First_Unit_Test\First_NUnit_Test\obj\Debug\net6.0\ref\First_NUnit_Test.dll
+C:\Users\Oguzk\source\repos\First_Unit_Test\First_NUnit_Test\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Oguzk\source\repos\First_Unit_Test\First_NUnit_Test\bin\Debug\net6.0\Moq.dll

@@ -15,4 +15,10 @@ namespace First_Unit_Test
             Console.WriteLine(message);
         }
     }
+    public class LogFakker : ILookBook
+    {
+        public void Message(string message)
+        {
+        }
+    }
 }
