@@ -107,6 +107,19 @@ namespace First_NUnit_Test
             Assert.IsFalse(logMock.Object.LogWithRefObj(ref customerNotUsed));
             Assert.IsTrue(logMock.Object.LogWithRefObj(ref customer));
         }
+        [Test]
+        public void BankLogDummy_SetGetLogType_MockTest()
+        {
+            var logMock = new Mock<ILookBook>();
+            logMock.Setup(x => x.LogSeverity).Returns(10);
+            logMock.Setup(x => x.LogType).Returns("warning");
+            logMock.SetupAllProperties();
+            logMock.Object.LogSeverity = 100;
+            logMock.Object.LogType = "warning";
 
+            Assert.That(logMock.Object.LogSeverity, Is.EqualTo(100));
+            Assert.That(logMock.Object.LogType, Is.EqualTo("warning"));
+           
+        }
     }
 }

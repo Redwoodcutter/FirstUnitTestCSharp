@@ -6,6 +6,8 @@ namespace First_Unit_Test
 {
     public interface ILookBook
     {
+        int LogSeverity { get; set; }
+        string LogType { get; set; }
         void Message(string message);
 
         bool LogToDb(string message);
@@ -20,6 +22,9 @@ namespace First_Unit_Test
     }
     public class LogBook : ILookBook
     {
+        public int LogSeverity { get; set; }
+        public string LogType { get; set; }
+
         public bool logBalanceAfterWithdraw(int balanceAfterWithdraw)
         {
            if(balanceAfterWithdraw >= 0)
