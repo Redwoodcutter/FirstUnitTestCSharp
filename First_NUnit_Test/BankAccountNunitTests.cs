@@ -95,6 +95,18 @@ namespace First_NUnit_Test
             Assert.IsTrue(logMock.Object.LogWithOutputResult("Oguz", out result));
             Assert.That(result, Is.EqualTo(DesiredOutput));
         }
+        [Test]
+        public void BankLogDummy_LogRefCheck_True()
+        {
+            var logMock = new Mock<ILookBook>();
+            Customer customer = new();
+            Customer customerNotUsed = new();
+
+            logMock.Setup(x => x.LogWithRefObj(ref customer)).Returns(true);
+
+            Assert.IsFalse(logMock.Object.LogWithRefObj(ref customerNotUsed));
+            Assert.IsTrue(logMock.Object.LogWithRefObj(ref customer));
+        }
 
     }
 }
