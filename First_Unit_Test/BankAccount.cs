@@ -24,10 +24,11 @@ namespace First_Unit_Test
         {
             if(amount<0)
             {
+                _logBook.LogToDb("Withdraw Amount: " + amount.ToString());
                 balance -= amount;
-                return true;
+                return _logBook.logBalanceAfterWithdraw(balance);
             }
-            return false;
+            return _logBook.logBalanceAfterWithdraw(balance-amount);
         }
         public int GetBalance()
         {
