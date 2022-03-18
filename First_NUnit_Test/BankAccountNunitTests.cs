@@ -119,7 +119,23 @@ namespace First_NUnit_Test
 
             Assert.That(logMock.Object.LogSeverity, Is.EqualTo(100));
             Assert.That(logMock.Object.LogType, Is.EqualTo("warning"));
-           
+
+
+            // Callbacks
+            string logTemp = "Hello, ";
+            logMock.Setup(x => x.LogToDb(It.IsAny<string>())).Returns(true).Callback((string str) => logTemp += str);
+
+            logMock.Object.LogToDb("Oguz");
+            Assert.That(logTemp, Is.EqualTo("Hello, Oguz"));
+
+            // Callbacks
+            int Count = 10;
+            logMock.Setup(x => x.LogToDb(It.IsAny<string>())).Returns(true).Callback(() => Count++);
+
+            logMock.Object.LogToDb("Oguz");
+            logMock.Object.LogToDb("Oguz");
+            logMock.Object.LogToDb("Oguz");
+            Assert.That(Count, Is.EqualTo(13));
         }
     }
 }
