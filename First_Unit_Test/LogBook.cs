@@ -13,6 +13,8 @@ namespace First_Unit_Test
         bool logBalanceAfterWithdraw(int balanceAfterWithdraw);
         
         string MessageWithReturnStr(string message);
+
+        bool LogWithOutputResult(string str, out string outputStr);
     }
     public class LogBook : ILookBook
     {
@@ -30,6 +32,12 @@ namespace First_Unit_Test
         public bool LogToDb(string message)
         {
             Console.WriteLine(message);
+            return true;
+        }
+
+        public bool LogWithOutputResult(string str, out string outputStr)
+        {
+            outputStr = "Hello" + str;
             return true;
         }
 

@@ -84,5 +84,17 @@ namespace First_NUnit_Test
             Assert.That(logMock.Object.MessageWithReturnStr("HELLo"), Is.EqualTo(DesiredOutput));
         }
 
+        [Test]
+        public void BankLogDummy_LogOutputString_True()
+        {
+            var logMock = new Mock<ILookBook>();
+            string DesiredOutput="hello";
+
+            logMock.Setup(x => x.LogWithOutputResult(It.IsAny<string>(), out DesiredOutput)).Returns(true);
+            string result = "";
+            Assert.IsTrue(logMock.Object.LogWithOutputResult("Oguz", out result));
+            Assert.That(result, Is.EqualTo(DesiredOutput));
+        }
+
     }
 }
