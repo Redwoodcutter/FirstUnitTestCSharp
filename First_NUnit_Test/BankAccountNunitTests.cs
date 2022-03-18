@@ -137,5 +137,19 @@ namespace First_NUnit_Test
             logMock.Object.LogToDb("Oguz");
             Assert.That(Count, Is.EqualTo(13));
         }
+        [Test]
+        public void BankLogDummy_Verify()
+        {
+            var logMock = new Mock<ILookBook>();
+            BankAccount bankAccount = new(logMock.Object);
+            bankAccount.Depozit(100);
+            Assert.That(bankAccount.GetBalance, Is.EqualTo(100));
+
+            //verification
+            logMock.Verify(u => u.Message(It.IsAny<string>()), Times.Exactly(2));
+            logMock.Verify(u => u.Message("Test"), Times.AtLeastOnce);
+            logMock.VerifySet(u=>u.LogSeverity=101, Times.Once);
+            logMock.VerifyGet(u => u.LogSeverity, Times.Once);
+        }
     }
 }
