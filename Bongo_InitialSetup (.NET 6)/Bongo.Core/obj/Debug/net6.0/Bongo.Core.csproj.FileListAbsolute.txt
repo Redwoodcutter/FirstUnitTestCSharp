@@ -1,0 +1,17 @@
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.Core.deps.json
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.Core.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.Core.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.DataAccess.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.Models.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.DataAccess.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\bin\Debug\net6.0\Bongo.Models.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.csproj.AssemblyReference.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.AssemblyInfoInputs.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.AssemblyInfo.cs
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.csproj.CoreCompileInputs.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.csproj.CopyComplete
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\refint\Bongo.Core.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\Bongo.Core.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.Core\obj\Debug\net6.0\ref\Bongo.Core.dll

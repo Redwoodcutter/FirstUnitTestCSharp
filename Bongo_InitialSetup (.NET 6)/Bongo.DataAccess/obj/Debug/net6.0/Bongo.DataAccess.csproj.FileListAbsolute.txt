@@ -1,0 +1,17 @@
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\bin\Debug\net6.0\Bongo.DataAccess.deps.json
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\bin\Debug\net6.0\Bongo.DataAccess.runtimeconfig.json
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\bin\Debug\net6.0\Bongo.DataAccess.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\bin\Debug\net6.0\Bongo.DataAccess.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\bin\Debug\net6.0\Bongo.Models.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\bin\Debug\net6.0\Bongo.Models.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.AssemblyInfo.cs
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.csproj.CopyComplete
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\refint\Bongo.DataAccess.dll
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.pdb
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\Bongo.DataAccess.genruntimeconfig.cache
+C:\Users\Oguzk\OneDrive\Masaüstü\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\obj\Debug\net6.0\ref\Bongo.DataAccess.dll
